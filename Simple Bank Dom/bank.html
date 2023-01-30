@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="bank_CSS.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="container mx-auto my-2">
+
+        <div class="grid grid-cols-1 bg-gradient-to-r from-teal-300 to-violet-400  h-14">
+        <h2 class="text-3xl text-center text-white mt-2 font-semibold"> Welcome To your Dash Board</h2>
+    </div>
+ 
+
+        <div class="grid grid-cols-3 gap-3 mt-16 mx-4">
+
+            <div class="pt-4 pb-4 w-64 bg-gradient-to-r from-sky-400 to-green-400 p-8 w-96 rounded-lg shadow-md shadow-gray-500">
+                <img class="w-12 p-0 inset-x-32 relative" src="images/deposit (1).png">
+                <h1 class="text-4xl text-center text-white font-semibold mb-2">Deposit</h1>
+                <h2 class="text-2xl text-center pt-2">$<span id="deposit">00</span></h2>
+                
+            </div>
+
+            <div class="pt-4 pb-4 w-64 bg-gradient-to-r from-red-400 to-orange-300 p-8 w-96 rounded-lg shadow-md shadow-gray-500">
+                <img class="w-12 p-0 inset-x-32 relative" src="images/deposit.png">
+                <h1 class="text-4xl text-center text-white font-semibold mb-2">Withdraw</h1>
+                <h2 class="text-2xl text-center pt-2">$<span id="withdraw">00</span></h2>
+            </div>
+
+            <div class="pt-4 pb-4 w-64 bg-gradient-to-r from-blue-400 to-violet-300 p-8 w-96 rounded-lg shadow-md shadow-gray-500">
+                <img class="w-12 p-0 inset-x-32 relative" src="images/wallet.png">
+                <h1 class="text-4xl text-center text-white font-semibold mb-2">Balance</h1>
+                <h2 class="text-2xl text-center pt-2">$<span id="balance">1200</span></h2>
+            </div>
+
+        </div>
+    </section>
+
+<!-- ================================================================= -->
+
+    <section class="container mx-auto my-2">
+
+        <div class="grid grid-cols-2 gap-4 mt-16">
+
+            <div class="col-span-1 bg-white shadow-md shadow-gray-500 p-10 mx-auto rounded-lg">
+                <h3 class="text-3xl text-sky-600 text-center mb-2 font-semibold">Deposit Amount</h3>
+                <input value="" type="number" required="required" placeholder="Amount" id="deposit-input"
+                    class=" w-64 h-12 text-center my-4 rounded-lg shadow shadow-gray-500" />
+                <button id="deposit-btn" class="rounded-xl bg-sky-600 px-4 py-2 text-white text-lg font-semibold shadow-md shadow-gray-500">Deposit</button>
+            </div>
+            <div class="col-span-1 bg-white shadow-md shadow-gray-400 p-10 mx-auto rounded-lg" id="form">
+                <h3 class="text-3xl text-red-500 text-center font-semibold mb-2">Withdraw Amount</h3>
+                <input value="" type="number" required="required" placeholder="Amount" id="withdraw-input"
+                    class=" w-64 h-12 text-center my-4 rounded-lg shadow shadow-gray-500" />
+                <button id="withdraw-btn" class="rounded-xl bg-red-600 px-4 py-2 text-white text-lg font-semibold shadow-md shadow-gray-500">Withdraw</button>
+            </div>
+
+
+        </div>
+    </section>
+    <script src="bank.js"></script>
+</body>
+
+</html>
